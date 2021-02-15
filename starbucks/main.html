@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>RESPONSIVE STARBUCKS WEBSITE LANDING PAGE</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#" class="logo"><img src="logo.png"> </a>
+            
+            <div class="toggle" onclick="togglemenu();"></div>
+            
+            <ul class="navigation">
+                <Li><a href="#">Home</a></Li>
+                <Li><a href="#">menu</a></Li>
+                <Li><a href="#">what's new</a></Li>
+                <Li><a href="#">contact</a></Li>
+                
+            </ul>
+
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h2>It's not just cofFee<br>It's <span>starbucks</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores impedit
+                     commodi distinctio iure consequatur repudiandae sit officiis, praesentium 
+                     deserunt unde ad eveniet voluptates possimu temporibus nditiis rem 
+                     exercitationem delectus illo.
+                </p>
+                <a href="#">learn more</a>
+
+            </div>
+            <div class="imgBox">
+                <img src="img1green.png" class="starbucks">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="thumb1.png" onclick="imgSlider('img1green.png');changeCircleColor('#017143')"></li>
+            <li><img src="thumb2.png" onclick="imgSlider('img2pink.png'); changeCircleColor('#eb7495')"></li>
+            <li><img src="thumb3.png" onclick="imgSlider('img3dpink.png');changeCircleColor('#d752b1')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="facebook.png"></a></li>
+            <li><a href="#"><img src="twitter.png"></a></li>
+            <li><a href="#"><img src="instagram.png"></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+          document.querySelector('.starbucks').src = anything;
+        }
+        function changeCircleColor(color){
+            const circle=document.querySelector('.circle');
+            circle.style.background=color;
+        }
+        function togglemenu(){
+            
+            var menutoggle=document.querySelector('.toggle');
+            var navigation=document.querySelector('.navigation')
+            menutoggle.classList.toggle('active')
+            navigation.classList.toggle('active')
+        }
+        
+
+    </script>
+    
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
