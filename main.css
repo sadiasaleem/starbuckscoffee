@@ -32,7 +32,7 @@ header{
 
 }
 header .logo
-{
+{   padding-top: 30px;
     position: relative;
     max-width: 80px;
 }
